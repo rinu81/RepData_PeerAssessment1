@@ -122,9 +122,9 @@ maxStep &lt;- meanStepsForInterval[which.max(meanStepsForInterval$steps),1]</cod
 <h2>Imputing missing values</h2>
 <pre class="r"><code># 1. Calculate and report the total number of missing values in the dataset 
 # (i.e. the total number of rows with ????????s)
-numberofMissingValues &lt;- sum(is.na(activityDataTotal$steps))
-
-# 2. Devise a strategy for filling in all of the missing values in the dataset. 
+sum(is.na(activityDataTotal$steps))</code></pre>
+<pre><code>## [1] 2304</code></pre>
+<pre class="r"><code># 2. Devise a strategy for filling in all of the missing values in the dataset. 
 # The strategy does not need to be sophisticated. For example, you could use the 
 # mean/median for that day, or the mean for that 5-minute interval, etc.</code></pre>
 <p>Strategy: Filling all the missing values in the dataset with the mean for the 5-minute interval.</p>

@@ -93,8 +93,14 @@ The 5-minute interval 835 contains the maximum steps.
 ```r
 # 1. Calculate and report the total number of missing values in the dataset 
 # (i.e. the total number of rows with ????????s)
-numberofMissingValues <- sum(is.na(activityDataTotal$steps))
+sum(is.na(activityDataTotal$steps))
+```
 
+```
+## [1] 2304
+```
+
+```r
 # 2. Devise a strategy for filling in all of the missing values in the dataset. 
 # The strategy does not need to be sophisticated. For example, you could use the 
 # mean/median for that day, or the mean for that 5-minute interval, etc.
